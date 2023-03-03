@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: bolder !important;
 	color: #292b2d !important;
 }
+
+h3 {
+	height: 100px;
+	border-radius: 20px 20px 0px 0px
+}
 /* Step 4b */
 div.shoe { 
 	background-color: rgb(178, 132, 57);
@@ -158,9 +163,11 @@ div.shoe img {
 	width: 300px;
 	height: 250px;
 }
+
 @media only screen and (max-width: 350px) {
 	img {display: none;}
 }
+
 .img-fluid {
 	height: 50%;
 }
