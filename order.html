@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Guos's Shoebox </title>
+  <meta charset="utf-8">
+
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <meta name="viewport" content="width=devicewidth, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/shoeStyles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="row">
+  	<header class="col-sm-12 text-center">
+     <img src="images/logo.jpg" alt="Shoebox Logo" id="logo" />
+     <h1> Guo's Shoebox </h1>
+     <ul class="nav">
+       <li class="col-sm-1"></li>
+       <li class="col-sm"> <a href="index.html"> Home </a></li>
+       <li class="col-sm-1"> <a href="about.html"> About Us </a></li>
+       <li class="col-sm-1"> <a href="sports.html"> Athletic Shoes </a></li>
+       <li class="col-sm-1"> <a href="casual.html"> Casual Shoes </a></li>
+       <li class="col-sm-1"> <a href="dress.html"> Dress Shoes </a></li>
+       <li class="col-sm-1"> <a href="seasonal.html"> Seasonal Shoes </a></li>
+       <li class="col-sm-1"> <a href="locations.html"> Locations </a></li>
+       <li class="col-sm-1"> <a href="contact.html"> Contact Us </a></li>
+       <li class="col-sm-1"> <a href="events.html"> Special Sales </a></li>
+       <li class="col-sm"> <a href="order.html"> Online Ordering </a></li>
+       <li class="col-sm-1"></li>
+     </ul>
+   </header>
+ </div>
+ <div class="row">
+  <h2 id="discount" class="text-center" style="background-color: yellow !important;"> Discount Code 10%:   </h2>
+</div>
+<form method="get" action="#">
+  <fieldset> 
+    <div style="border: solid;">    
+      <caption id="cap" style="border: solid;"> Place Order Below: </caption>
+    </div>
+    <table id="order" class="table table-striped table-danger" style="">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col"> Item </th>
+          <th scope="col"> Price </th>
+          <th scope="col"> Quantity </th>
+          <th scope="col"> Total </th>
+        </tr>
+      </thead>
+      <tbody> 
+        <tr>
+          <td scope="row"> Reebok Men's Club C Revenge </td>
+          <td class="quantity1"> $80.00 </td>
+          <td>
+            <input type="number" id="quantity1" name="sQuantity" min="0" max="10"> 
+          </td>
+          <td id="rvTot" class="tpi">$0.00</td>
+        </tr>
+        <tr>
+          <td> Ralph Lauren: Longwood Leather Sneaker </td>
+          <td class="quantity2"> $95.00 </td>
+          <td>
+            <input type="number" id="quantity2" name="LongwoodLeather" min="0" max="10">
+          </td>
+          <td id="rlTot" class="tpi"> $0.00 </td>
+        </tr>
+        <tr>
+          <td> Johnston & Murphy Novick Brown Cap Toe Lace Up Shoes </td>
+          <td class="quantity3"> $149.99 </td>
+          <td>
+            <input type="number" id="quantity3" name="NovickBrown" min="0" max="10">
+          </td>
+          <td id="jmTot" class="tpi"> $0.00 </td>
+        </tr>
+        <tr>
+          <td> Edric Leather Penny Loafer </td>
+          <td class="quantity4"> $295.00 </td>
+          <td>
+            <input type="number" id="quantity4"name="LeatherPenny" min="0" max="10"> 
+          </td>
+          <td id="elTot" class="tpi"> $0.00 </td>
+        </tr>
+        <tr>
+          <td> UGG Neumel </td>
+          <td class="quantity5"> $140.00 </td>
+          <td>
+            <input type="number" id="quantity5" name="UGGNeumel" min="0" max="10">
+          </td>
+          <td id="uggTot" class="tpi"> $0.00 </td>
+        </tr>
+        <tr>
+          <td> Thursday Boot Co. : Captain </td>
+          <td class="quantity6"> $199.00 </td>
+          <td>
+            <input type="number" id="quantity6" name="CaptainCo." min="0" max="10">
+          </td>
+          <td id="tbTot" class="tpi"> $0.00 </td>
+        </tr>
+        <tr>
+          <td> On Cloud 5's </td>
+          <td class="quantity7"> $139.95 </td>
+          <td>
+            <input type="number" id="quantity7" name="Cloud5" min="0" max="10">
+          </td>
+          <td id="ocTot" class="tpi"> $0.00 </td>
+        </tr>
+        <tr>
+          <td> Adidas Ultraboost 4.0 DNA Shoes </td>
+          <td class="quantity8"> $190.00 </td>
+          <td>
+            <input type="number" id="quantity8" name="UltraboostDNA" min="0" max="10">
+          </td>
+          <td id="rudTot" class="tpi"> $0.00 </td>
+        </tr>
+        <tr>
+          <td> Total: </td>
+          <td>
+            <!--<label> Place Order </label>-->
+            <input type="submit" class="btn btn-warning btn-outline-danger btn-primary" name="placeOrder" value="Place Order">
+          </td>
+          <td>
+            <input id="disCode" style="width: 100px;" type="text" name="discountCode" placeholder="Enter Code.....">
+            <input type="button" name="placeOrder" value="Apply Code">
+          </td>
+          <td id="totTot"> Sub-total: $0.00 <br> Discount: $0.00 <br> Tax: $0.00 <br> Total: $0.00 </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  
+
+
+  <div class="row">  
+    <footer class="col-sm-12 text-center">
+      <ul class="foot text-center">
+        <li class="col-sm-6"> <a href="survey.html"> Survey </a></li>
+        <li class="col-sm-6"> <a href="employment.html"> Employment </a></li>
+      </ul>
+      <i class="fa fa-pied-piper"></i>
+      <i class="fa fa-car"></i>
+      <i class="fa fa-drupal"></i>
+      <i class="fa fa-jsfiddle"></i><br>
+      Guo Design &copy; 2022 
+    </footer>
+  </div>
+  <script type="text/javascript" src="scripts/orderScript.js"></script>
+</body>
+</html>
