@@ -177,6 +177,8 @@ div.shoe img {
 @media only screen and (max-width: 575px) {
 	div.shoe p {
 	height: 400px !important;
+	overflow-y: scroll;
+		
 	}
 	ul.nav {
 	display: block;
