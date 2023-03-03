@@ -173,6 +173,10 @@ div.shoe img {
 		height: 150px;
 		width: 200px;
 	}
+	div.shoe p {
+	height: 300px !important;
+	overflow-y: scroll;
+	}
 
 @media only screen and (max-width: 575px) {
 	div.shoe p {
