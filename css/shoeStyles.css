@@ -168,6 +168,25 @@ div.shoe img {
 	img {display: none;}
 }
 
+@media only screen and (max-width: 700px) {
+	div.shoe img {
+		height: 150px;
+		width: 200px;
+	}
+
+@media only screen and (max-width: 575px) {
+	div.shoe p {
+	height: 400px !important;
+	}
+	ul.nav {
+	display: block;
+	}
+	#italic > h3 {
+	font-size: .75 rem;
+	}
+	
+}
+
 .img-fluid {
 	height: 50%;
 }
