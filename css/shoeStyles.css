@@ -96,7 +96,7 @@ ul.nav a:visited {
 }
 /* Step 4l */ 
 details.more {
-	color: #008080;
+	color: black;
 }
 /* Step 4m */
 p.underconstruction {
@@ -155,8 +155,8 @@ legend {
 }*/
 }
 div.shoe img {
-	max-width: 50%;
-	max-height: 50%;
+	width: 200px;
+	height: 200px;
 }
 @media only screen and (max-width: 350px) {
 	img {display: none;}
@@ -183,4 +183,9 @@ html > body > div:nth-of-type(3) > footer > ul > li:nth-of-type(2) > a {
 
 html > body > div:nth-of-type(3) > footer > ul > li:first-of-type > a {
 	color: white !important;
+}
+
+
+#italic > p {
+	height: 200px;
 }
