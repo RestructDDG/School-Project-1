@@ -1,2 +1,2 @@
 # School-Project-1
-This is my College Web Development Project. 
+This is the HTML portion of my College Web Development Project. 
